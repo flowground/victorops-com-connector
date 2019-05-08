@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "team": {
+            "required": true,
+            "type": "string"
+        },
+        "daysForward": {
+            "required": false,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 30,
+            "default": 14
+        },
+        "daysSkip": {
+            "required": false,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 90,
+            "default": 0
+        },
+        "step": {
+            "required": false,
+            "type": "number",
+            "minimum": 0,
+            "maximum": 3,
+            "default": 0
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

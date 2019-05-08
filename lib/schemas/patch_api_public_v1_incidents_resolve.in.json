@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "incidentNames": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "userName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "userName",
+                "incidentNames"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "user": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The contact phone",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "rank": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "label",
+                "phone"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

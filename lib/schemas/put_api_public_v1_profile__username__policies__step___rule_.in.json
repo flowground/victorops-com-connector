@@ -1,0 +1,55 @@
+{
+    "type": "object",
+    "properties": {
+        "username": {
+            "required": true,
+            "type": "string"
+        },
+        "step": {
+            "required": true,
+            "type": "number"
+        },
+        "rule": {
+            "required": true,
+            "type": "number"
+        },
+        "requestBody": {
+            "properties": {
+                "contact": {
+                    "properties": {
+                        "id": {
+                            "type": "number"
+                        },
+                        "type": {
+                            "enum": [
+                                "email",
+                                "phone"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "type": {
+                    "enum": [
+                        "push",
+                        "email",
+                        "sms",
+                        "phone"
+                    ],
+                    "example": "email",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

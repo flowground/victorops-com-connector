@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "properties": {
+        "user": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The contact email",
+            "properties": {
+                "email": {
+                    "format": "email",
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "rank": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "label",
+                "email"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

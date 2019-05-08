@@ -1,0 +1,57 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "details": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "targets": {
+                    "items": {
+                        "properties": {
+                            "slug": {
+                                "description": "User name or escalation policy slug",
+                                "type": "string"
+                            },
+                            "type": {
+                                "description": "Type of target",
+                                "enum": [
+                                    "User",
+                                    "EscalationPolicy"
+                                ],
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "type",
+                            "slug"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "userName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "summary",
+                "details",
+                "userName",
+                "targets"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

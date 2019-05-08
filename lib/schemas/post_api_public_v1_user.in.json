@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "description": "The user information",
+            "properties": {
+                "admin": {
+                    "type": "boolean"
+                },
+                "email": {
+                    "format": "email",
+                    "type": "string"
+                },
+                "expirationHours": {
+                    "default": 24,
+                    "description": "The validity duration for the invitatation/set password link sent to the added user.",
+                    "type": "number"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "firstName",
+                "lastName",
+                "username",
+                "email"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

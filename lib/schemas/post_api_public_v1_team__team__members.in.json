@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "team": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The user information",
+            "properties": {
+                "username": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "username"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

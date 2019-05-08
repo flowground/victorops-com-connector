@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "reroutes": {
+                    "items": {
+                        "properties": {
+                            "incidentNumber": {
+                                "type": "string"
+                            },
+                            "targets": {
+                                "items": {
+                                    "properties": {
+                                        "slug": {
+                                            "description": "User name or escalation policy slug",
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "description": "Type of target",
+                                            "enum": [
+                                                "User",
+                                                "EscalationPolicy"
+                                            ],
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "type",
+                                        "slug"
+                                    ],
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [
+                            "incidentNumber",
+                            "targets"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "userName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "userName",
+                "reroutes"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

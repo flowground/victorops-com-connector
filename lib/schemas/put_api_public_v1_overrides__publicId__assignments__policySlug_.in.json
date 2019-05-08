@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "properties": {
+        "publicId": {
+            "required": true,
+            "type": "string"
+        },
+        "policySlug": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "policy": {
+                    "description": "The policy slug",
+                    "type": "string"
+                },
+                "username": {
+                    "description": "The username being assinged",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "policy"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

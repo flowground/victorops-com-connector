@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "user": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The information about what to do with the deleted user",
+            "properties": {
+                "replacement": {
+                    "description": "The user to take the place of the deleted user in escalations",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

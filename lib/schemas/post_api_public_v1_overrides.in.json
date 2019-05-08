@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "end": {
+                    "description": "The override end time (ISO 8601)",
+                    "type": "string"
+                },
+                "start": {
+                    "description": "The override start time (ISO 8601)",
+                    "type": "string"
+                },
+                "timezone": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "username": {
+            "required": true,
+            "type": "string"
+        },
+        "step": {
+            "required": true,
+            "type": "number"
+        },
+        "rule": {
+            "required": true,
+            "type": "number"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

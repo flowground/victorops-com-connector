@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "policy": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "fromUser": {
+                    "type": "string"
+                },
+                "toUser": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "fromUser",
+                "toUser"
+            ],
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

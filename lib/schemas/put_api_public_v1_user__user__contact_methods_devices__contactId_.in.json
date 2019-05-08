@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "properties": {
+        "user": {
+            "required": true,
+            "type": "string"
+        },
+        "contactId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The contact device",
+            "properties": {
+                "chat_escalation_sound": {
+                    "type": "string"
+                },
+                "device_label": {
+                    "type": "string"
+                },
+                "escalation_notification_sound": {
+                    "type": "string"
+                },
+                "resolved_notification_sound": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "X_VO_Api_Id": {
+            "required": true,
+            "type": "string"
+        },
+        "X_VO_Api_Key": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
